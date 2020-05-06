@@ -19,11 +19,13 @@ my_favourite_number = 10;
 
 console.log(my_favourite_number+myFavouriteNumber+MyFavouriteNumber)
 
-var colors = ['pink','green','orange',6,8];
+var colors = ['pink','green','orange',6,8,10];
 red_color = [colors[3]+colors[4] +' '+ colors[0] ]
-colors.pop(8)
+MyLength = colors.length
+MySort = colors.sort()
+MyReverse = colors.reverse()
 
-alert(colors)
+alert(MyReverse)
 
 
 // var ourButton =document.getElementById("our-button")
