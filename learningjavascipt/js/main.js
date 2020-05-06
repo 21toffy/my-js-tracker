@@ -2,6 +2,21 @@
 var Test = 'this is a test';
 var test = 'This is anpjther test';
 
+
+//camel case
+
+var myFavouriteNumber = 'this is my ';
+
+//partial case
+
+var MyFavouriteNumber = 'Favurite ';
+
+//underscore
+
+var my_favourite_number = 'number';
+
+console.log(my_favourite_number+myFavouriteNumber+MyFavouriteNumber)
+alert(my_favourite_number+myFavouriteNumber+MyFavouriteNumber)
 alert(test)
 
 // var ourButton =document.getElementById("our-button")
