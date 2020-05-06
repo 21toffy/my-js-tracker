@@ -13,7 +13,9 @@ var MyFavouriteNumber = 'Favurite ';
 
 //underscore
 
-var my_favourite_number = 'number';
+var my_favourite_number;
+my_favourite_number = 5;
+my_favourite_number = 10;
 
 console.log(my_favourite_number+myFavouriteNumber+MyFavouriteNumber)
 alert(my_favourite_number+myFavouriteNumber+MyFavouriteNumber)
