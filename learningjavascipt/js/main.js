@@ -1,16 +1,28 @@
-//while loop
-var i = 1;
-while(i<13){
-    console.log('2 '+'X ' + i+'= '+ 2*i);
-    i++;
 
-}
 
-//forloops
-console.log('2 times table')
-for(var i = 1; i<=12; i++){
-    console.log(2+'X' +i +'=' +2*i);
-}
+//foreachloop
+var numbers = [2,3,5,6,6,2];
+
+numbers.forEach(function(number){
+    console.log(number);
+});
+
+console.log('------------------------------')
+var lists = [3,4,5,6,4,6,67,5];
+
+lists.forEach(function(li){
+console.log(li);
+});
+
+
+
+
+
+
+
+
+
+
 
 
 // var ourButton =document.getElementById("our-button")
