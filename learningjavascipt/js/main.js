@@ -1,31 +1,8 @@
-//naming conventions of variables 
-var Test = 'this is a test';
-var test = 'This is anpjther test';
-
-
-//camel case
-
-var myFavouriteNumber = 'this is my ';
-
-//partial case
-
-var MyFavouriteNumber = 'Favurite ';
-
-//underscore
-
-var my_favourite_number;
-my_favourite_number = 5;
-my_favourite_number = 10;
-
-console.log(my_favourite_number+myFavouriteNumber+MyFavouriteNumber)
-
-var colors = ['pink','green','orange',6,8,10];
-red_color = [colors[3]+colors[4] +' '+ colors[0] ]
-MyLength = colors.length
-MySort = colors.sort()
-MyReverse = colors.reverse()
-
-alert(MyReverse)
+//forloops
+console.log('2 times table')
+for(var i = 1; i<=12; i++){
+    console.log(2+'X' +i +'=' +2*i);
+}
 
 
 // var ourButton =document.getElementById("our-button")
