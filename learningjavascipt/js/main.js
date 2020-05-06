@@ -16,10 +16,72 @@ lists.reverse()
 // });
 
 
-for(var i=0; i<lists.length; i++){
-    console.log(lists[i]);
+// for(var i=0; i<lists.length; i++){
+// console.log(lists[i]);
 
-}
+// }
+
+// for(var i = 0; i<5;i++){
+//     console.log(i)
+
+// }
+
+// if(2==2){console.log('Tru')}else{console.log('False')}
+
+// var DadsAge = 90;
+// var MumsAge = 80;
+
+
+// if(DadsAge==MumsAge&&DadsAge>MumsAge){
+//     console.log(true)
+// }else{
+//     console.log(false)    
+// }
+
+
+var fruit = 'mangoes' ;
+ switch(fruit){
+    
+     case 'oranges':
+        console.log('i love oranges');
+         break;
+    case 'banana':
+        console.log('i love banannas less')
+        break;
+     case 'apples':
+        console.log('i love apples more')
+
+        default:
+            console.log('mad man no fruit for your stupid ass')
+    
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
