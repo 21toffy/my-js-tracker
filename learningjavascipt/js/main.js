@@ -1,7 +1,8 @@
+//naming conventions of variables 
+var Test = 'this is a test';
+var test = 'This is anpjther test';
 
-var number1 = '35';
-var number2 = '40';
-alert('my favourite number is '+number2)
+alert(test)
 
 // var ourButton =document.getElementById("our-button")
 // var headline = document.getElementById("our-headline")
