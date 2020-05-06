@@ -1,7 +1,7 @@
 
-var number1 = 35;
-
-alert(number1)
+var number1 = '35';
+var number2 = '40';
+alert('my favourite number is '+number2)
 
 // var ourButton =document.getElementById("our-button")
 // var headline = document.getElementById("our-headline")
