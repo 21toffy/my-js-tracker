@@ -1,21 +1,25 @@
 
 
 //foreachloop
-var numbers = [2,3,5,6,6,2];
+// var numbers = [2,3,5,6,6,2];
 
-numbers.forEach(function(number){
-    console.log(number);
-});
+// numbers.forEach(function(number){
+//     console.log(number);
+// });
 
 console.log('------------------------------')
 var lists = [3,4,5,6,4,6,67,5];
+lists.reverse()
 
-lists.forEach(function(li){
-console.log(li);
-});
+// lists.forEach(function(li){
+// console.log(li);
+// });
 
 
+for(var i=0; i<lists.length; i++){
+    console.log(lists[i]);
 
+}
 
 
 
