@@ -1,3 +1,42 @@
+var obje = {
+    name : 'tofunmi',
+    OtherName : 'okedeji',
+    age : 90,
+    children : ['tofunmi', 'aomide', 'omoyeni' ],
+    address : {
+        HouseNumber : 16,
+        street : 'ayanleye street',
+        town : 'egan',
+        state : 'lagos state',
+        country : 'Nigeria'
+    },
+    FullName: function(){
+        return this.name+""+this.OtherName;
+    },
+    FullAdress: function(){
+        return this.address.HouseNumber + this.address.street + this.address.town + this.address.state + this.address.country
+    }
+}
+
+
+var brief  = 'my name is '+obje.name+' '+obje.OtherName+' and i am '+obje.age+ ' i live at '+
+obje.address.HouseNumber + obje.address.street;
+
+console.log(obje.FullAdress())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //foreachloop
@@ -7,9 +46,9 @@
 //     console.log(number);
 // });
 
-console.log('------------------------------')
-var lists = [3,4,5,6,4,6,67,5];
-lists.reverse()
+// console.log('------------------------------')
+// var lists = [3,4,5,6,4,6,67,5];
+// lists.reverse()
 
 // lists.forEach(function(li){
 // console.log(li);
@@ -39,22 +78,22 @@ lists.reverse()
 // }
 
 
-var fruit = 'mangoes' ;
- switch(fruit){
+// var fruit = 'mangoes' ;
+//  switch(fruit){
     
-     case 'oranges':
-        console.log('i love oranges');
-         break;
-    case 'banana':
-        console.log('i love banannas less')
-        break;
-     case 'apples':
-        console.log('i love apples more')
+//      case 'oranges':
+//         console.log('i love oranges');
+//          break;
+//     case 'banana':
+//         console.log('i love banannas less')
+//         break;
+//      case 'apples':
+//         console.log('i love apples more')
 
-        default:
-            console.log('mad man no fruit for your stupid ass')
+//         default:
+//             console.log('mad man no fruit for your stupid ass')
     
- }
+//  }
 
 
 
