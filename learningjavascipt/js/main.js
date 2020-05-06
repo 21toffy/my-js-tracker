@@ -18,8 +18,13 @@ my_favourite_number = 5;
 my_favourite_number = 10;
 
 console.log(my_favourite_number+myFavouriteNumber+MyFavouriteNumber)
-alert(my_favourite_number+myFavouriteNumber+MyFavouriteNumber)
-alert(test)
+
+var colors = ['pink','green','orange',6,8];
+red_color = [colors[3]+colors[4] +' '+ colors[0] ]
+colors.pop(8)
+
+alert(colors)
+
 
 // var ourButton =document.getElementById("our-button")
 // var headline = document.getElementById("our-headline")
