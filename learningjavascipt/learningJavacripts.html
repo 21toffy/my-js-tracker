@@ -5,19 +5,30 @@
     <link rel='stylesheet' href="css/style.css">
 </head>
 <body>
-    
+    <button >click me please</button>
+
+    <button onclick="another_function()">another button</button>
+
+    <button onmouseout="contract()" onmouseover="showdate()">show date</button>
+    <h2 id = 'time'></h2>
+
     <div class="header">
         <h1>Learning javascript</h1>
         <p>by tofunmi</p>
     </div>
     <h1 id="our-headline">click a list item to replace this list</h1>
     <button id="our-button">add new item</button>
-    <ul id = 'our-list'>
+    <ul id = 'our-list' class="active">
         <li>first item</li>
+        <hr>
         <li>second item</li>
+        <hr>
         <li>third item</li>
+        <hr>
         <li>fourth item</li>
+        <hr>
         <li>fifth item</li>
+        <hr>
     </ul>
 
     <script src='js/main.js'></script>

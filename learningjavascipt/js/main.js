@@ -1,30 +1,178 @@
-var obje = {
-    name : 'tofunmi',
-    OtherName : 'okedeji',
-    age : 90,
-    children : ['tofunmi', 'aomide', 'omoyeni' ],
-    address : {
-        HouseNumber : 16,
-        street : 'ayanleye street',
-        town : 'egan',
-        state : 'lagos state',
-        country : 'Nigeria'
-    },
-    FullName: function(){
-        return this.name+""+this.OtherName;
-    },
-    FullAdress: function(){
-        return this.address.HouseNumber + this.address.street + this.address.town + this.address.state + this.address.country
-    }
+// var newItemCounter = 1;
+// var newList = document.getElementById('our-list');
+// var but = document.getElementById('our-button');
+// var headline = document.getElementById('our-headline');
+
+// var lists = document.getElementById('our-list').getElementsByTagName('li');
+
+
+
+// for(i=0; i<lists.length; i++){
+//     lists[i].addEventListener('click', activate)
+
+// }
+
+// function activate()
+//     {
+
+//         headline.innerHTML = this.innerHTML;
+//         // alert('click detected on '+i);
+//     }
+
+
+// but.addEventListener('click', createNewItem);
+// function createNewItem(){
+//     newList.innerHTML+='<li>new something'+ newItemCounter + '</li><hr>';
+//     newItemCounter++
+// }
+
+//normal functions and arrow functions
+
+function myName(name){
+    console.log(name);
+}
+myName('tofunmi')
+
+//arrow function
+
+const myBestName = (name) =>{
+    console.log(name);
+}
+
+myBestName('tofunmi okedeji')
+
+//for one argument this is parmited
+const testing = age =>{
+    return age;
 }
 
 
-var brief  = 'my name is '+obje.name+' '+obje.OtherName+' and i am '+obje.age+ ' i live at '+
-obje.address.HouseNumber + obje.address.street;
+const sentnce ='My age is ' + testing(23);
+console.log(sentnce)
 
-console.log(obje.FullAdress())
+let multiplication =  (n) =>{
+    console.log(n +' times table')
+    
+    for(i=1; i<=12; i++){
+        return n + 'X' + i + " = " + n*i
+        
+    }
+    
+}
+
+console.log(multiplication(3))
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var obje = {
+//     name : 'tofunmi',
+//     OtherName : 'okedeji',
+//     age : 90,
+//     children : ['tofunmi', 'aomide', 'omoyeni' ],
+//     address : {
+//         HouseNumber : 16,
+//         street : 'ayanleye street',
+//         town : 'egan',
+//         state : 'lagos state',
+//         country : 'Nigeria'
+//     },
+//     FullName: function(){
+//         return this.name+""+this.OtherName;
+//     },
+//     FullAdress: function(){
+//         return this.address.HouseNumber + this.address.street + this.address.town + this.address.state + this.address.country
+//     }
+// }
+
+
+// var brief  = 'my name is '+obje.name+' '+obje.OtherName+' and i am '+obje.age+ ' i live at '+
+// obje.address.HouseNumber + obje.address.street;
+
+// console.log(obje.FullAdress())
+
+
+// //object constructor
+// var fruit = new Object();
+// fruit.name = ['apple', 'orange', 'bAnnana'];
+// fruit.shape = ['goid', 'circulAR', 'cuve' ];
+
+// fruit.description = function(){
+//     return this.name[0]+':'+ this.shape[0];
+// }
+
+// console.log(fruit.description());
+
+
+
+// //object constructor pattern 
+
+
+
+// function fruit (name, shape, size, color){
+
+//     this.name = name;
+//     this.shape = shape;
+//     this.size = size;
+//     this.color = color;
+
+//     this.description = function()
+//     {
+//         return this.name+this.shape;
+//     }
+
+// }
+
+
+// var melons = new fruit('water melon','round', 'big', 'green');
+
+
+
+// console.log(thise.description());
+
+
+// function another_function(){
+//     var onetxt = document.getElementById('our-headline');
+//     onetxt.innerHTML = 'WOULD YOU JST DHUT UP';
+// }
+
+// function doClick(){
+//     alert('COWARD YOU CLICKED!! ')
+// }
+
+// function showdate(){
+//     var tim = document.getElementById('time');
+//     tim.innerHTML=Date();
+// }
+
+// function contract(){
+//     var tim = document.getElementById('time');
+//     tim.innerHTML='';
+// }
 
 
 
@@ -94,40 +242,6 @@ console.log(obje.FullAdress())
 //             console.log('mad man no fruit for your stupid ass')
     
 //  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // var ourButton =document.getElementById("our-button")
