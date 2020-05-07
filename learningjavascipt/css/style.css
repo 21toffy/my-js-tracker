@@ -1,3 +1,9 @@
 .active{
     background: pink;
 }
+
+.person{
+    display:inline-block;
+    margin:10px;
+    biorder:;
+}
