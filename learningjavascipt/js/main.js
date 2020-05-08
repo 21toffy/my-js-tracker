@@ -1,7 +1,28 @@
+{/* <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script> */}
 
-<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 
+// function props(){
+//     return(<div>
+// <h1>name: {props.name}</h1>
+//             <p></p>
+//         </div>)
+// }
+
+
+class person {
+    constructor(){
+        this.name = 'tofunmi';
+        this.age = 23;  
+    }
+
+    printMyName (){
+        console.log(this.name);
+    }
+}
+let myPerson = new person();
+
+myPerson.printMyName;
 // var newItemCounter = 1;
 // var newList = document.getElementById('our-list');
 // var but = document.getElementById('our-button');
