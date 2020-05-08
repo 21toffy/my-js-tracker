@@ -58,6 +58,25 @@ const number = [2, 'mfn', 6, '48', 45.4, '4.56'];
 console.log(ele1, ele3, ele4, ele5, ele6)
 
 
+//array functions
+const digits = [2,3,4,5,6];
+
+const newDigits = digits.map((dig) =>{
+    return dig*2
+});
+console.log(digits);
+console.log(newDigits);
+
+const linksWithoutHttp = ['mad_man_of_gadars','harry_potter_and_the_philosophers_stone','star_wars'];
+
+const appndingHttpToNakedLinks  = linksWithoutHttp.map((compeleteLink) => {
+    return 'Https://'+compeleteLink+'.com';
+
+});
+
+console.log(linksWithoutHttp);
+console.log(appndingHttpToNakedLinks);
+
 
 
 
