@@ -8,6 +8,14 @@
 //             <p></p>
 //         </div>)
 // }
+
+//spread and rest operator
+let numberWords = [2,'boy',5,'man'];
+let newArray = [...numberWords,'this', 'is', 5,4]
+console.log(newArray)
+
+
+//classes
 class Human{
     constructor(){
         this.gender = 'female';
@@ -112,38 +120,38 @@ myPerson.printMyPhisique();
 
 
 
+let newObject = {
+    father: 'olaitan',
+    mother: 'oyinade',
+    numberOfSiblings: '2',
+};
 
 
 
+var obje = {
+    ...newObject,
+    name : 'tofunmi',
+    OtherName : 'okedeji',
+    age : 90,
+    children : ['tofunmi', 'aomide', 'omoyeni' ],
+    address : {
+        HouseNumber : 16,
+        street : 'ayanleye street',
+        town : 'egan',
+        state : 'lagos state',
+        country : 'Nigeria'
+    },
+    FullName: function(){
+        return this.name+""+this.OtherName;
+    },
+    FullAdress: function(){
+        return this.address.HouseNumber + this.address.street + this.address.town + this.address.state + this.address.country
+    }
+}
+
+console.log(obje)
 
 
-
-
-
-
-
-
-
-
-// var obje = {
-//     name : 'tofunmi',
-//     OtherName : 'okedeji',
-//     age : 90,
-//     children : ['tofunmi', 'aomide', 'omoyeni' ],
-//     address : {
-//         HouseNumber : 16,
-//         street : 'ayanleye street',
-//         town : 'egan',
-//         state : 'lagos state',
-//         country : 'Nigeria'
-//     },
-//     FullName: function(){
-//         return this.name+""+this.OtherName;
-//     },
-//     FullAdress: function(){
-//         return this.address.HouseNumber + this.address.street + this.address.town + this.address.state + this.address.country
-//     }
-// }
 
 
 // var brief  = 'my name is '+obje.name+' '+obje.OtherName+' and i am '+obje.age+ ' i live at '+
