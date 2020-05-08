@@ -8,10 +8,19 @@
 //             <p></p>
 //         </div>)
 // }
-
-
-class person {
+class Human{
     constructor(){
+        this.gender = 'female';
+        this.race = 'Negroid ';
+    }
+    printMyPhisique(){
+        console.log(this.gender +' '+this.race);
+    }
+}
+
+class person extends Human{
+    constructor(){
+        super();
         this.name = 'tofunmi';
         this.age = 23;  
     }
@@ -20,9 +29,11 @@ class person {
         console.log(this.name);
     }
 }
-let myPerson = new person();
 
-myPerson.printMyName;
+let myPerson = new person();
+// let myPhisique  = new Human();
+myPerson.printMyName();
+myPerson.printMyPhisique();
 // var newItemCounter = 1;
 // var newList = document.getElementById('our-list');
 // var but = document.getElementById('our-button');
@@ -53,39 +64,39 @@ myPerson.printMyName;
 
 //normal functions and arrow functions
 
-function myName(name){
-    console.log(name);
-}
-myName('tofunmi')
+// function myName(name){
+//     console.log(name);
+// }
+// myName('tofunmi')
 
-//arrow function
+// //arrow function
 
-const myBestName = (name) =>{
-    console.log(name);
-}
+// const myBestName = (name) =>{
+//     console.log(name);
+// }
 
-myBestName('tofunmi okedeji')
+// myBestName('tofunmi okedeji')
 
 //for one argument this is parmited
-const testing = age =>{
-    return age;
-}
+// const testing = age =>{
+//     return age;
+// }
 
 
-const sentnce ='My age is ' + testing(23);
-console.log(sentnce)
+// const sentnce ='My age is ' + testing(23);
+// console.log(sentnce)
 
-let multiplication =  (n) =>{
-    console.log(n +' times table')
+// let multiplication =  (n) =>{
+//     console.log(n +' times table')
     
-    for(i=1; i<=12; i++){
-        return n + 'X' + i + " = " + n*i
+//     for(i=1; i<=12; i++){
+//         return n + 'X' + i + " = " + n*i
         
-    }
+//     }
     
-}
+// }
 
-console.log(multiplication(3))
+// console.log(multiplication(3))
 
 
 
