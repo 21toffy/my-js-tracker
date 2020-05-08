@@ -42,6 +42,30 @@ let myPerson = new person();
 // let myPhisique  = new Human();
 myPerson.printMyName();
 myPerson.printMyPhisique();
+//rest operator
+
+const filter = (...args) => {
+    return args.filter(el => el ===2);
+}
+
+console.log(filter(2,3,4,5,6))
+
+//array destructuring
+
+const number = [2, 'mfn', 6, '48', 45.4, '4.56'];
+[ele1,, ele3, ele4, ele5, ele6] = number;
+
+console.log(ele1, ele3, ele4, ele5, ele6)
+
+
+
+
+
+
+
+
+
+
 // var newItemCounter = 1;
 // var newList = document.getElementById('our-list');
 // var but = document.getElementById('our-button');
