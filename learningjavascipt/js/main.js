@@ -40,7 +40,7 @@ Tesla.prototype.charge = function() {
     console.log("Charging...");
 }
 
-const tesla = new Tesla('3', 20);
+// const tesla = new Tesla('3', 20);
 tesla.drive();
 tesla.charge();
 
@@ -125,11 +125,29 @@ class User{
     register(){
         console.log(this.username+ ' is now registered')
     }
+    static countUsers(){
+        console.log('there are 50 registered users')
+    }
 }
 
 let user1 = new User('tofunmi', 'okedejit@yahoo.com', 'pass1234');
-register.user1();
+user1.register();
+User.countUsers();
 
+class Members extends User{
+    constructor(username, email, password, membershipPackage){
+        super(username, email, password);
+        this.membershipPackage = membershipPackage;
+    }
+    getPackage (){
+        console.log( 'MR '+this.username+" your membership package is the "+ this.membershipPackage+ ' package');
+    }
+}
+ let mike = new Members ('Mike', 'mike@fastmail.com', 'passmaike', 'Gold')
+ mike.getPackage();
+ 
+// calling a function from the User class
+ mike.register();
 
 
 
