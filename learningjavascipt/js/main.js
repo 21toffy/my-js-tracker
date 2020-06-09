@@ -2,14 +2,51 @@
 <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script> */}
 
 
-// function props(){
-//     return(<div>
-// <h1>name: {props.name}</h1>
-//             <p></p>
-//         </div>)
-// }
+// learning classes in java script
+class Car {
+    constructor(maker, model) {
+      this.maker = maker;
+      this.model = model;
+    }
+  
+    drive() {
+        console.log("Zoom!");
+    }
+  }
 
-//spread and rest operator
+  class Tesla extends Car {
+    constructor(model, chargetime) {
+        super('Tesla', model);
+        this.chargetime = chargetime;
+    }
+
+    charge() {
+        console.log("Charging...");
+    }
+}
+
+const tesla = new Tesla('3', 20);
+tesla.drive();
+tesla.charge();
+
+
+// prop tytpe
+
+
+Tesla.prototype = Object.create(Car.prototype);
+Tesla.prototype.constructor = Tesla;
+
+Tesla.prototype.charge = function() {
+    console.log("Charging...");
+}
+
+const tesla = new Tesla('3', 20);
+tesla.drive();
+tesla.charge();
+
+
+
+
 let numberWords = [2,'boy',5,'man'];
 let newArray = [...numberWords,'this', 'is', 5,4]
 console.log(newArray)
