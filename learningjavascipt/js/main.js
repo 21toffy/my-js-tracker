@@ -114,8 +114,21 @@ const appndingHttpToNakedLinks  = linksWithoutHttp.map((compeleteLink) => {
 console.log(linksWithoutHttp);
 console.log(appndingHttpToNakedLinks);
 
+class User{
+    //constructor is a code that runs when your class ijs first being instanciated
+    constructor(username, email, password){
+        this.username = username;
+        this.email  = email;
+        this.passwoed = password;
+    }
+    //method(functio that belongs to thi class)
+    register(){
+        console.log(this.username+ ' is now registered')
+    }
+}
 
-
+let user1 = new User('tofunmi', 'okedejit@yahoo.com', 'pass1234');
+register.user1();
 
 
 
